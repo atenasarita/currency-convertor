@@ -63,7 +63,7 @@ async function convertAmount(){
     const fromConversion = data.conversion_rates[fromValue];
     const toConversion = data.conversion_rates[toValue];
 
-    const convertedAmount = ((amount / fromConversion) * toConversion).toFixed(2);
+    const convertedAmount = ((amount / fromConversion) * toConversion).toFixed(3);
     document.querySelector("#result").innerHTML = amount + " " + fromValue + " = " + convertedAmount + " " + toValue;
 }
 
